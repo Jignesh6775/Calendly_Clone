@@ -1,0 +1,72 @@
+#parent {
+  border: 2px solid black;
+  width: 800px;
+  margin: auto;
+  height: 900px;
+}
+
+.child {
+  height: auto;
+  width: 100%;
+  border: 1px solid deeppink;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+#content {
+  display: flex;
+}
+
+
+#blocks{
+    height: 100%;
+    width: auto;
+    border: 2px solid red;
+    /* background-color: black;
+     */
+    
+}
+.cards{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+#sidebar{
+    border: 2px solid black;
+    padding: 20px;
+}
