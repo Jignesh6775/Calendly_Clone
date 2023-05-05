@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif:ital@0;1&family=Roboto:wght@300;400;500&display=swap');
+
+:root{
+ --font-family: 'Roboto', sans-serif;
+ --main-color : #006bff ;
+ --sec-color : #f7faff ;
+}
+
+*{
+    margin: 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: var(--font-family); 
+}
+
+.ads1{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   width: 80%;
+   margin: auto;
+   border: 2px solid red;
+}
+.connection{
+    padding: .5rem;
+    justify-content: center;
+}
+
+.connection h1, .connection p, .connection button{
+    margin-bottom: 1rem;
+}
+
+.connection h1{
+    font-size: 3rem;
+    font-weight:normal;
+    margin-bottom: 1rem;
+}
+.connection button{
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    margin-right:10px;
+    border-radius: 35px;
+   font-weight: 400;
+}
+
+.btn1 {
+    background-color: var(--main-color);
+    color: white;
+    
+}
+.info{
+    /* padding: .5rem; */
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.info-div1 h4, .info-div1 p , .info-div1 a,.info-div2 h4, .info-div2 p , .info-div2 a{
+    margin-bottom: 5px;
+}
+
+.info-div1{
+    margin-bottom: 20px;
+}
+

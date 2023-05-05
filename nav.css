@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif:ital@0;1&family=Roboto:wght@300;400;500&display=swap');
 
 :root{
- --font-family: 'Cormorant Garamond', serif;
+ --font-family: 'Roboto', sans-serif;
  --main-color : #006bff ;
 
 }
@@ -16,7 +16,7 @@
 #navbar{
     /* border: 2px solid green; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    
+    margin-bottom: 2.5rem;
 }
 nav{
     width: 90%;
@@ -50,7 +50,7 @@ ul a{
 li {
     list-style: none;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 400;
     color: black;
     margin: 0 .7rem;
 }
@@ -80,7 +80,7 @@ li i{
     padding: .6rem 1.5rem;
     font-size: 1.2rem;
     background-color: var(--main-color);
-    font-weight: 600;
+    font-weight: 400;
     color: white;
     border-radius: 8px;
     border: none;
