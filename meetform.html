@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:8090/">
+        <label for="Event-name">Event name :</label><br>
+        <input type="text" name="event-name" id="event-name" required><br>
+
+        <label for="location">Location :</label><br>
+        <select name="location" id="location" required>
+            <option value="Select Location">Select Location</option>
+            <option value="zoom">Zoom</option>
+            <option value="google-meet">Google meet</option>
+            <option value="phone-call">Phone call</option>
+            <option value="in-person">In-person meeting</option>
+            <option value="microsoft">Microsoft Teams</option>
+            <option value="webex">Webex</option>
+            <option value="go-to">GoTO Meeting</option>
+            <option value="custom">Custom</option>
+        </select><br>
+
+        <label for="scheduled-date">Scheduled date:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="set-time">Set Time:</label>
+        <input type="time" id="start-time" name="start-time" required> <span>to</span>
+        <input type="time" id="end-time" name="end-time" required><br>
+
+        <label for="description">Description :</label><br>
+        <textarea rows="4" cols="50" name="description" form="usrform" placeholder="Write a summery and any details your inivitee should know about the event." id="description" required></textarea><br>
+
+        <label for="event-link">Event link :</label><br>
+        <input type="text" id="event-link" name="event-link"><br>     
+
+        <input type="submit" value="+Create" id="submit-btn">
+    </form>
+</body>
+<script>
+    // const userURL = new URLSearchParams(window.location.search)
+    
+    // const form = document.querySelector("form")
+    // const eventName = document.getElementById("event-name")
+    // const loc = document.getElementById("location")
+    // const desc = document.getElementById("description")
+    // const eventLink = document.getElementById("event-link")
+
+    // form.addEventListener("submit", (e)=>{
+    //     // e.preventDefault()
+
+    //     console.log(eventName.value, loc.value, desc.value, eventLink.value)
+    //     console.log(event)
+    // })
+</script>
+</html>
