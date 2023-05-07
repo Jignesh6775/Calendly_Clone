@@ -1,0 +1,102 @@
+#logo{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+#logo>img{
+    width: 40%;
+    margin-bottom: -20px;
+}
+#from{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+#Googleimg{
+    width: 5%;
+padding-top: 5px;
+padding-right: 10px;
+}
+#Microsoftimg{
+    width: 5%;
+padding-top: 5px;
+padding-right: 10px;
+}
+#getstrat{
+    width: 600px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(87, 87, 255);
+    color: white;
+    font-size: 20px;
+    
+}
+#getstrat:hover{
+    background-color: rgb(18, 18, 175);
+}
+#Google{
+    width: 600px;
+    padding: 1px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin: 10px;
+
+}
+#Google a{
+    text-decoration: none;
+    color: black;
+}
+
+#Google:hover{
+    background-color:whitesmoke;
+}
+#Microsoft{
+    width: 600px;
+    padding: 1px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin: 10px;
+
+}
+#Microsoft:hover{
+    background-color:whitesmoke;
+}
+#email{
+    width: 580px;
+    padding: 1px;
+    border-radius: 15px;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin: 10px;
+}
+#password{
+    width: 580px;
+    padding: 1px;
+    border-radius: 15px;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin: 10px;
+}
+#from h4{
+    padding-bottom: 100px;
+    text-align: start;
+    padding-left: 40px;
+}
+#name{
+    width: 580px;
+    padding: 1px;
+    border-radius: 15px;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 80px;
+}
