@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif:ital@0;1&family=Roboto:wght@300;400;500&display=swap');
+
+:root{
+ --font-family: 'Roboto', sans-serif;
+ --main-color : #006bff ;
+
+}
+
+*{
+    margin: 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+ 
+}
+#navbar{
+    /* border: 2px solid green; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 2.5rem;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid red; */
+    padding-bottom: 10px;
+   
+}
+.second-div{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 20% 60% 15%;
+    margin: 10px 0;
+}
+.category{
+    display: flex;
+}
+
+.logo{
+    width: 10rem;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: black;
+    margin: 0 .7rem;
+}
+
+li i{
+    font-size: .8rem;
+}
+
+.lang{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+    text-align: end;
+}
+.acc-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.bar{
+    display: none;
+}
+
+.acc-btn button{
+    padding: .6rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: var(--main-color);
+    font-weight: 400;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+@media screen and (max-width: 1108px) {
+
+    .logo{
+        content : url('./image//setcalOnlyLogo.jpg');
+        width: 4rem;
+    }
+    .category ul li{
+       font-size: 1.1rem;
+    }
+    .acc-btn button{
+        font-size: 1rem;
+    }
+    
+}
+
+.resourses-hover{
+    /* width: 60%; */
+    display: flex;
+    margin: auto;
+    display: none;
+}
+
+.sub-div{
+    padding: 10px;
+}
+.ads{
+    display: none;
+}
+
+#resourses:hover .ads{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+
+
+/* footer css  */
+
+#footer{
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+    background-color: var(--sec-color);
+}
+
+.body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 30px;
+    padding-top: 4rem;
+}
+
+.body > div > h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.body > div > p{
+    margin-bottom: 15px;
+    opacity: .70;
+}
+.body > div > p:hover{
+    opacity: 1;
+    text-decoration: underline;
+    /* object-fit: contain; */
+}
+.footer-h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer-h1 span{
+    color: var(--main-color);
+}
+
+.footer-head{
+   margin-bottom: 2rem;
+}
+.footer-head > p{
+    font-size: 1.1rem;
+}
+.high-light{
+    border: none;
+    margin-left: 15px;
+    background-color: #c2d9f9;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: .7rem;
+    color: var(--main-color);
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+.lang1{
+    display: flex;
+    
+}
+
+.social > h3 {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .social >a> i{
+    /* background-color:black; */
+    color: black;
+    font-size: 30px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .social >a> i:hover{
+    border-bottom: 4px solid var(--main-color) ;
+  }
