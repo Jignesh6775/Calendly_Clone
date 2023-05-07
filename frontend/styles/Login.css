@@ -1,0 +1,57 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+#from{
+    margin: 50px;
+   
+}
+#from>h1{
+    font-size: 60px;
+    color: blue;
+}
+#from>h3{
+    font-size: 20px;
+}
+#email{
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+#password{
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#logbtn{
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(74, 74, 235);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+#main img{
+    margin-top: 150px;
+    margin-right: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
