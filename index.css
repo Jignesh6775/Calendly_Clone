@@ -62,7 +62,10 @@
 .btn1 {
     background-color: var(--main-color);
     color: white;
-    
+    border:2px solid var(--main-color);
+}
+.btn2{
+    border:2px solid var(--main-color);
 }
 .info{
     /* padding: .5rem; */
@@ -303,4 +306,157 @@ font-size: 1.4rem;
     margin: auto;
     padding-top: 5rem;
     background-color: var(--web-solor);
+}
+
+.make-main-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding-top: 3rem;
+    align-items: center;
+}
+.make-main-left1{
+    padding: 10px;
+
+}
+
+.make-main-left1 h1{
+    margin-bottom: 20px;
+   font-size: 2.5rem;
+   font-weight: 400;
+}
+.make-main-left1 img{
+    margin-bottom: 20px;
+}
+.make-main-left1 h2{
+    font-weight: 500;
+}
+.make-main-left1 p{
+    margin-bottom: 15px;
+    font-size: 1.2rem;    
+}
+
+.make-main-left1 a{
+    margin-bottom: 15px;
+    font-size: 1.2rem;  
+    text-decoration: none;  
+
+}
+
+.make-main-left1 a:hover{
+    color: black;
+   transform: scale(2);
+}
+.make-main-left1 a:hover i{
+    margin-left: 10px;
+}
+
+.make-main-right1 img{
+    width: 100%;
+}
+
+
+.carousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel img {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel img.active {
+    opacity: 1;
+  }
+  
+  @keyframes rotate {
+    0% {
+      opacity: 0;
+    }
+    12.5% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    37.5% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .carousel img:nth-child(1) {
+    animation: rotate 30s linear infinite;
+  }
+  
+  .carousel img:nth-child(2) {
+    animation: rotate 30s linear infinite 5s;
+  }
+  
+  .carousel img:nth-child(3) {
+    animation: rotate 30s linear infinite 10s;
+  }
+  
+  .carousel img:nth-child(4) {
+    animation: rotate 30s linear infinite 15s;
+  }
+  
+  .carousel img:nth-child(5) {
+    animation: rotate 30s linear infinite 20s;
+  }
+  
+  #automation{
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+  }
+
+  .left-border{
+    border-left: 5px inset var(--main-color);
+  }
+
+  .make-main-left2{
+    padding: 10px;
+
+}
+.make-main-div2{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    padding-top: 3rem;
+    align-items: center;
+}
+.auto-left{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.auto-left > div{
+    padding: 20px;
+
+}
+
+.auto-left > div > h1{
+    font-size: 1.5rem;
+    opacity: 0.50;
+}
+  
+.auto-left > div > h1:hover{
+    opacity: 1;
+}
+
+.blue{
+    color: #006bff;
 }
