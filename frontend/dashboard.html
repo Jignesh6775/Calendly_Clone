@@ -61,17 +61,10 @@
   </section>
 
 
-  <section id="main">
-
-  </section>
-
-
-
-
   <!--Add buttons to initiate auth sequence and sign out-->
- <div id="auth">
+  <div id="auth-cont">
 
- </div>
+  </div>
 
   <pre id="content" style="white-space: pre-wrap;"></pre>
 
@@ -153,7 +146,7 @@
         if (resp.error !== undefined) {
           throw (resp);
         }
-  
+
         document.getElementById('authorize_button').innerText = 'Refresh';
         await listUpcomingEvents();
       };
@@ -205,11 +198,11 @@
         return;
       }
 
-      
+
       console.log("res", response.result.summary)
       const userNameLink = document.getElementById("username")
       userNameLink.innerText = response.result.summary
-      
+
 
       const events = response.result.items;
       if (!events || events.length == 0) {
@@ -221,20 +214,22 @@
       const output = events.reduce(
         (str, event) => `${str}${event.summary} (${event.start.dateTime || event.start.date})\n`, 'Events:\n');
       document.getElementById('content').innerText = output;
-      console.log("Output",events)
+      console.log("Output", events)
 
       const authCont = document.getElementById("auth-cont")
-
-
-      for (let i = 0; i < events.length; i++) {
+      let i=0
+      while (i < events.length) {
         let Element = events[i]
+        i=i+1
         let card = document.createElement("div");
-        card.className = "card";
+        card.className = "card"; //main card div
+
         let div1 = document.createElement("div"); //div one for delete btn
 
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
-        
+
+
         //delete btn and function
         let delbtn = document.createElement("img");
         delbtn.id = "delete-btn";
@@ -246,7 +241,7 @@
           const myTimeout = setTimeout(deleteEvent, 1200);
 
           function myStopFunction() {
-            clearTimeout(deleteEvent(i));
+            clearTimeout(deleteEvent(index));
           }
 
         });
@@ -261,8 +256,8 @@
         duration.id = "duration";
         duration.innerText = `${Element.start.dateTime}`;
 
-        // let loc = document.createElement("p");
-        // loc.innerText = location;
+        let location = document.createElement("p");
+        location.innerText = Element.location;
 
         let div2 = document.createElement("div");
 
@@ -275,24 +270,10 @@
 
         div2.append(copylink, share);
 
-        card.append(div1, eventname, duration, div2);
+        card.append(div1, eventname, duration, location, div2);
 
         authCont.appendChild(card)
       }
-      // `
-      //   <div class="card">
-      //     <div>
-      //       <input type="checkbox">
-      //         <img id="delete-btn" src="https://img.icons8.com/metro/344/trash.png">
-      //     </div>
-      //     <p id="eventname">${event.summary}</p>
-      //     <p id="duration">${event.start.dateTime}</p><p>Zoom Meet </p>
-      //     <div>
-      //       <p class="blue">❐ Copy link</p>
-      //       <button>Share</button>
-      //     </div>
-      //   </div>
-      //   `
 
       //////////
       const userURL = new URLSearchParams(window.location.search)
@@ -314,7 +295,7 @@
 
       const event = {
         'summary': `${eventName}`,
-        'location': 'Dhoraji, Gujarat 360410, India',
+        'location': `${location}`,
         'description': `${desc}`,
         'start': {
           'dateTime': `${moment(newStart).subtract(330, 'minutes').format()}`,
