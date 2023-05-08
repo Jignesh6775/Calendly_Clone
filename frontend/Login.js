@@ -13,7 +13,7 @@ const onLogin = async () => {
     console.log(payload)
   
   try {
-    let url = "http://localhost:8000/user/login";
+    let url = "http://localhost:8090/user/login";
   
       let responce = await fetch(url, {
         method: "POST",
@@ -27,7 +27,7 @@ const onLogin = async () => {
       console.log('res',res)
    //   document.getElementById("from").reset()
       alert("Login Successfull")
-    //  window.location.href="./Login.html"
+     window.location.href="./meetform.html"
   
   } catch (error) {
     console.log(error.message)

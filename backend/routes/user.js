@@ -10,13 +10,13 @@ userRouter.post("/singup",async(req,res)=>{
     try {
         const {email,password,name,role}=req.body;
         const isUserPresent=await User.findOne({email});
-        if(isUserPresent) return res.send("User find");
+        if(isUserPresent) return res.json("User find");
         const hash=await bcrypt.hashSync(password,8);
         const newUser=new User({name,email,password:hash,role})
         await newUser.save();
-        res.send("singup successful")
+        res.json("singup successful")
     } catch (error) {
-        res.send(error.message)
+        res.json(error.message)
     }
 })
 
@@ -24,16 +24,16 @@ userRouter.post("/login",async(req,res)=>{
     try {
         const {email,password}=req.body;
         const isUserPresent=await User.findOne({email});
-        if(!isUserPresent) return res.send("User not find");
+        if(!isUserPresent) return res.json("User not find");
         const isPasswordCorrect=await bcrypt.compareSync(password,isUserPresent.password);
-        if(!isPasswordCorrect)return res.send("Invalid credentials");
+        if(!isPasswordCorrect)return res.json("Invalid credentials");
         const token = await jwt.sign(
             { email,userId:isUserPresent._id,role:isUserPresent.role },process.env.JWT_ACCESS_SECRET,{expiresIn:"1m"}
             );
             const refreshToken = await jwt.sign(
                 { email,userId:isUserPresent._id,role:isUserPresent.role },process.env.JWT_REFRESH_SECRET,{expiresIn:"5m"}
                 );
-                res.send({msg:"login succes",token,refreshToken})
+                res.json({msg:"login succes",token,refreshToken})
     } catch (error) {
         res.send(error.message)
     }

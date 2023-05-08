@@ -89,7 +89,7 @@ li i{
 @media screen and (max-width: 1108px) {
 
     .logo{
-        content : url('./image//setcalOnlyLogo.jpg');
+        content : url('../image/setcalOnlyLogo.jpg');
         width: 4rem;
     }
     .category ul li{

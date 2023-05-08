@@ -217,10 +217,10 @@
       console.log("Output", events)
 
       const authCont = document.getElementById("auth-cont")
-      let i=0
-      while (i < events.length) {
+      authCont.innerHTML = null
+      for (let i=0; i < events.length; i++) {
         let Element = events[i]
-        i=i+1
+    
         let card = document.createElement("div");
         card.className = "card"; //main card div
 

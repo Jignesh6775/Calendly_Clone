@@ -72,7 +72,7 @@ app.get( '/auth/google/callback',
 );
 
 app.get('/protected',  (req, res) => {
-  res.redirect(`https://calendly.com/event_types/user/me`);
+  res.redirect("../frontend/meetform");
 });
 
 app.get('/logout', (req, res) => {

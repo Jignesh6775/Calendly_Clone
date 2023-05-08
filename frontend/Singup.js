@@ -13,7 +13,7 @@ const onSignup = async () => {
   console.log(payload)
 
 try {
-  let url = "http://localhost:8000/user/singup";
+  let url = "http://localhost:8090/user/singup";
 
     let responce = await fetch(url, {
       method: "POST",
