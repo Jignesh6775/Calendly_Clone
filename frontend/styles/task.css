@@ -96,13 +96,13 @@ select>option {
 
 #setTime{
     display: flex;
-    width: 25%;
+    width: 270px;
     justify-content: space-between;
     align-items: center;
 }
 
 #setTime input{
-    width: 35%;
+    width: 100px;
 }
 
 #submit-btn {
