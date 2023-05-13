@@ -29,14 +29,6 @@ Video presentation:- https://drive.google.com/file/d/1qnQ7xRQT47RuInYSSuT4uSsSVz
 [Swapnil Solanki](https://github.com/Swapnil887)  (Handled the Login part)
 <br>
 
-## Dashboard Page
-![Screenshot 2023-05-13 103412](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/93cb9274-d69f-4bc6-a571-5a948d18d062)
-
-
-## Meet-form Page
-![Screenshot 2023-05-13 102951](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/893d0b24-adca-448a-baec-8d0dc1801812)
-
-
 ## Home Page
 ![Screenshot 2023-05-13 102720](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/458298e2-3851-4476-a3f7-cec49b5e1605)
 
@@ -47,3 +39,12 @@ Video presentation:- https://drive.google.com/file/d/1qnQ7xRQT47RuInYSSuT4uSsSVz
 
 ## Login Page
 ![Screenshot 2023-05-13 102906](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/dbcb9774-40aa-44b7-9883-9fa7ad9c932a)
+
+
+## Meet-form Page
+![Screenshot 2023-05-13 102951](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/893d0b24-adca-448a-baec-8d0dc1801812)
+
+
+## Dashboard Page
+![Screenshot 2023-05-13 103412](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/93cb9274-d69f-4bc6-a571-5a948d18d062)
+
