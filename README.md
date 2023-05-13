@@ -30,21 +30,31 @@ Video presentation:- https://drive.google.com/file/d/1qnQ7xRQT47RuInYSSuT4uSsSVz
 <br>
 
 ## Home Page
+<h3>This is the landing pag eof our website, so here </h3>
+<h3>you can see we have a navbar where we can see some buttons which works properly.</h3>
+
 ![Screenshot 2023-05-13 102720](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/458298e2-3851-4476-a3f7-cec49b5e1605)
 
 
 ## Sign-up Page
+<h3>This is the registering or signing page of our website, 
+from where we can create a new account with SetCal.</h3>
+
 ![Screenshot 2023-05-13 102804](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/191699a9-02c2-437f-8538-aa5f0dcdf964)
 
 
 ## Login Page
+<h3>This is the login page of our website, from where we can login to our acccount, if our we have a account wit SetCal</h3>
+
 ![Screenshot 2023-05-13 102906](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/dbcb9774-40aa-44b7-9883-9fa7ad9c932a)
 
 
 ## Meet-form Page
+<h3>So this is the meet form page of our website, from where we can create or genrate a meet.</h3>
 ![Screenshot 2023-05-13 102951](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/893d0b24-adca-448a-baec-8d0dc1801812)
 
 
 ## Dashboard Page
+<h3>This is the dashboard page of our website, here we will be able to see all the set meetings on the our google calendar.</h3>
 ![Screenshot 2023-05-13 103412](https://github.com/Jignesh6775/muddled-canvas-7776/assets/119413894/93cb9274-d69f-4bc6-a571-5a948d18d062)
 
