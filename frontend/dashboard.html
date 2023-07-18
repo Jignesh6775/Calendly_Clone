@@ -35,7 +35,7 @@
   </div>
   <div id="headings">
     <p>Event Types</p>
-    <p>Scheduled Events</p>
+    <a href="./meetform.html"><p>Scheduled Events</p></a>
     <p>Workflows</p>
     <p>Routing Forms</p>
   </div>
@@ -211,9 +211,9 @@
       }
       // Flatten to string to display
 
-      const output = events.reduce(
-        (str, event) => `${str}${event.summary} (${event.start.dateTime || event.start.date})\n`, 'Events:\n');
-      document.getElementById('content').innerText = output;
+      // const output = events.reduce(
+      //   (str, event) => `${str}${event.summary} (${event.start.dateTime || event.start.date})\n`, 'Events:\n');
+      // document.getElementById('content').innerText = output;
       console.log("Output", events)
 
       const authCont = document.getElementById("auth-cont")
