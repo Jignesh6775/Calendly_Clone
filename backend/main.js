@@ -24,7 +24,7 @@ const GoogleStrategy = require('passport-google-oauth2').Strategy;
 passport.use(new GoogleStrategy({
   clientID: id,
   clientSecret: secret,
-  callbackURL: "http://localhost:8090/auth/google/callback",
+  callbackURL: "https://frontend-setcal.vercel.app/meetform.html",
   passReqToCallback: true,
 },
 function(request, accessToken, refreshToken, profile, done) {
