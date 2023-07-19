@@ -3,9 +3,9 @@
 #### Web application for Create events and tasks on your Google calendar.
 
 ## Live Links:-
-SetCat:- https://setcal-front-end-deploy.vercel.app/
+SetCat:- https://64b7e644be74dc11e9c4fe05--aesthetic-buttercream-927ddb.netlify.app
 <br>
-Backend Server:- https://cute-gray-ant-slip.cyclic.app/
+Backend Server:- https://setcal-backend.onrender.com/
 <br>
 Video presentation:- https://drive.google.com/file/d/1qnQ7xRQT47RuInYSSuT4uSsSVzjiHUUQ/view?usp=share_link 
 
