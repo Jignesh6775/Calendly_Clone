@@ -1,7 +1,6 @@
 *{
     text-decoration: none;
 }
-
 p {
     font-family: sans-serif;
 }
@@ -47,11 +46,6 @@ p {
 
 }
 
-#headings>p:first-child~p:hover {
-    border-bottom: solid 3px grey;
-    color: black;
-}
-
 #headings>a p {
     padding-bottom: 25px;
     border-bottom: solid 3px rgb(59, 59, 255);
@@ -71,6 +65,11 @@ p {
     border-bottom: solid 3px grey;
     color: black;
     text-decoration: none;
+}
+
+#headings>p:first-child~p:hover {
+    border-bottom: solid 3px grey;
+    color: black;
 }
 
 #secondnavbar-dash p {

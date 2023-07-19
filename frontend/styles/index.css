@@ -16,14 +16,14 @@
     background-color: var(--sec-color);
 }
 
-#ads1{
+#das12{
     padding-bottom: 5rem;
     border: 2rx solid red;
     position: relative;
     
 }
 
-.ads1{
+.das12{
    display: grid;
    grid-template-columns: repeat(2,1fr);
    width: 80%;

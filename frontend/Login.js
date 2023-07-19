@@ -13,7 +13,7 @@ const onLogin = async () => {
     console.log(payload)
   
   try {
-    let url = "http://localhost:8090/user/login";
+    let url = "https://happy-hare-capris.cyclic.app/user/login";
   
       let responce = await fetch(url, {
         method: "POST",
@@ -26,8 +26,25 @@ const onLogin = async () => {
       let res = await responce.json();
       console.log('res',res)
    //   document.getElementById("from").reset()
-      alert("Login Successfull")
-     window.location.href="./meetform.html"
+      // alert(res)
+
+      Swal.fire(
+        res
+      )
+
+      if(res.msg=="login succes"){
+        console.log(res.token)
+        // alert("login success")
+        
+        Swal.fire(
+          'login success'
+        )
+        
+          window.location.href="./meetform.html"
+        
+          
+      }
+    //  
   
   } catch (error) {
     console.log(error.message)

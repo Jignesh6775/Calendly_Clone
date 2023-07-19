@@ -1,3 +1,9 @@
+*{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: black; */
+    /* background-image: url("https://img.freepik.com/premium-photo/calendar-page-close-up-blue-background-business-planning-appointment-meeting-concept_293060-976.jpg?w=996"); */
+}
 #logo{
     width: 50%;
     text-align: center;
@@ -17,9 +23,11 @@
 
 }
 #Googleimg{
+    
     width: 5%;
 padding-top: 5px;
 padding-right: 10px;
+
 }
 #Microsoftimg{
     width: 4%;
@@ -99,4 +107,9 @@ padding-right: 10px;
     font-size: 20px;
     padding-left: 20px;
     margin-top: 80px;
+}
+
+
+#googlefont{
+    color: aliceblue;
 }

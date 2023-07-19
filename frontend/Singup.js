@@ -13,7 +13,7 @@ const onSignup = async () => {
   console.log(payload)
 
 try {
-  let url = "http://localhost:8090/user/singup";
+  let url = "https://happy-hare-capris.cyclic.app/user/singup";
 
     let responce = await fetch(url, {
       method: "POST",
@@ -26,9 +26,12 @@ try {
     let res = await responce.json();
     console.log('res',res)
  //   document.getElementById("from").reset()
-    alert("SignUp Successfull")
-    window.location.href="./Login.html"
+    // console.log(res)
 
+    alert(res)
+    if(res == "singup successful"){
+    window.location.href="./Login.html"
+    }
 } catch (error) {
   console.log(error.message)
 }
