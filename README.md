@@ -3,7 +3,7 @@
 #### Web application for Create events and tasks on your Google calendar.
 
 ## Live Links:-
-SetCat:- https://64b7e644be74dc11e9c4fe05--aesthetic-buttercream-927ddb.netlify.app
+SetCat:- https://aesthetic-buttercream-927ddb.netlify.app
 <br>
 Backend Server:- https://setcal-backend.onrender.com/
 <br>
