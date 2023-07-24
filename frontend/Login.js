@@ -13,7 +13,7 @@ const onLogin = async () => {
     console.log(payload)
   
   try {
-    let url = "https://happy-hare-capris.cyclic.app/user/login";
+    let url = "https://setcal-backend.onrender.com/user/login";
   
       let responce = await fetch(url, {
         method: "POST",
