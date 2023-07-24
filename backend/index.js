@@ -75,16 +75,16 @@ app.get( '/auth/google/callback',
     session: false
   }),(req,res)=>{
     // console.log(req.user._json);
-    // req.body=req.user._json;
+    req.body=req.user._json;
     res.redirect(`https://thriving-raindrop-11b45e.netlify.app/meetform.html?email=${req.user._json.email}`);
     // res.redirect("http://127.0.0.1:5501/frontend/meetform.html");
   }
 );
 
-app.get('/protected',  (req, res) => {
-  console.log(req.user);
-  res.redirect("http://127.0.0.1:5501/frontend/meetform.html");
-});
+// app.get('/protected',  (req, res) => {
+//   console.log(req.user);
+//   res.redirect("http://127.0.0.1:5501/frontend/meetform.html");
+// });
 
 app.get('/logout', (req, res) => {
   req.logout();
