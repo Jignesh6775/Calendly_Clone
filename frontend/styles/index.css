@@ -460,3 +460,28 @@ font-size: 1.4rem;
 .blue{
     color: #006bff;
 }
+
+@media (min-width:600px)and (max-width:900px) {
+    #resourses,#pricing{
+        display: none;
+    }
+    .das12{
+        display: flex;
+        flex-direction: column;
+    }
+    .ads2{
+        h4,p{
+            font-size: 0lvh;
+        }
+    }
+}
+
+@media  (max-width:600px) {
+    #resourses,#pricing,#teams{
+        display: none;
+    }
+    .das12{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -4,7 +4,10 @@
 }
 
 #main{
+    width: 90%;
     display: flex;
+    /* text-align: center; */
+    margin: auto;
     justify-content: space-evenly;
     margin-top: 20px;
 }
@@ -20,7 +23,7 @@
     font-size: 20px;
 }
 #email{
-    width: 500px;
+    width: 70%;
     height: 40px;
     padding-left: 20px;
     margin-bottom: 20px;
@@ -28,16 +31,16 @@
 
 }
 #password{
-    width: 500px;
+    width:  70%;
     height: 40px;
     padding-left: 20px;
     margin-bottom: 10px;
     font-size: 20px;
 }
 #logbtn{
-    width: 500px;
+    width:  68%;
     height: 40px;
-    padding-left: 20px;
+    padding-left: 15px;
     margin-bottom: 20px;
     background-color: rgb(74, 74, 235);
     border-radius: 10px;
@@ -45,9 +48,10 @@
     color: white;
     font-size: 20px;
     margin-left: 15px;
+    cursor: pointer;
 }
 #main img{
-    margin-top: 150px;
+    margin-top: 10%;
     margin-right: 100px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 10px;
@@ -55,4 +59,14 @@
 a{
     text-decoration: none;
     color: blue;
+}
+@media (min-width:300px)and (max-width:1000px) {
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    #main img{
+        width: 80%;
+        padding-top: -20px;
+    }
 }

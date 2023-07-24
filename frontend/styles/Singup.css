@@ -35,26 +35,27 @@ padding-top: 5px;
 padding-right: 10px;
 }
 #getstrat{
-    width: 600px;
+    width: 75%;
     padding: 15px;
     border-radius: 25px;
     border: none;
     background-color: rgb(87, 87, 255);
     color: white;
     font-size: 20px;
+    cursor: pointer;
     
 }
 #getstrat:hover{
-    background-color: rgb(18, 18, 175);
+    background-color: rgb(77, 77, 221);
 }
 #Google{
-    width: 600px;
+    width: 75%;
     padding: 1px;
     border-radius: 25px;
     padding-bottom: 10px;
     background-color: white;
     margin: 10px;
-
+    cursor: pointer;
 }
 #Google a{
     text-decoration: none;
@@ -65,19 +66,19 @@ padding-right: 10px;
     background-color:whitesmoke;
 }
 #Microsoft{
-    width: 600px;
+    width: 75%;
     padding: 1px;
     border-radius: 25px;
     padding-bottom: 10px;
     background-color: white;
     margin: 10px;
-
+    cursor: pointer;
 }
 #Microsoft:hover{
     background-color:whitesmoke;
 }
 #email{
-    width: 580px;
+    width: 70%;
     padding: 1px;
     border-radius: 15px;
     height: 45px;
@@ -86,7 +87,7 @@ padding-right: 10px;
     margin: 10px;
 }
 #password{
-    width: 580px;
+    width: 70%;
     padding: 1px;
     border-radius: 15px;
     height: 45px;
@@ -100,7 +101,7 @@ padding-right: 10px;
     padding-left: 40px;
 }
 #name{
-    width: 580px;
+    width: 70%;
     padding: 1px;
     border-radius: 15px;
     height: 45px;
@@ -112,4 +113,16 @@ padding-right: 10px;
 
 #googlefont{
     color: aliceblue;
+}
+@media  (min-width:600px) and (max-width:1000px) {
+    #form{
+        width: 75%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    /* #name, #email, #password, #getstart, #Google, #Microsoft{
+        width: 100px;
+
+    } */
 }
