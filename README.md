@@ -1,9 +1,9 @@
 # SetCal
 
-#### Web application for Create events and tasks on your Google calendar.
+#### Web application for Creating events and tasks on your Google calendar.
 
 ## Live Links:-
-SetCat:- https://thriving-raindrop-11b45e.netlify.app
+SetCat:- https://calendly-clone-qa7v27r77-jignesh6775.vercel.app/
 <br>
 Backend Server:- https://setcal-backend.onrender.com/
 <br>
